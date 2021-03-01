@@ -43,6 +43,9 @@ $ npm install @hapi/joi @types/hapi__joi
 
 # use typeorm to connect to a docker postgres database
 $ npm install @nestjs/typeorm typeorm pg
+
+# integrating authentication with Passport
+$ npm install @nestjs/passport passport @types/passport-local passport-local @types/express
 ```
 
 ## Running the app

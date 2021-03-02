@@ -1,9 +1,9 @@
 import * as request from 'supertest';
 import { Test } from '@nestjs/testing';
-import { AppModule } from './../src/app.module';
+import { INestApplication } from '@nestjs/common';
+import { AppModule } from '../src/app.module';
 import { PostsModule } from '../src/posts/posts.module';
 import { PostsService } from '../src/posts/posts.service';
-import { INestApplication } from '@nestjs/common';
 
 describe('Posts', () => {
   let app: INestApplication;

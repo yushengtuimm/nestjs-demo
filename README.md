@@ -41,11 +41,17 @@ $ npm install @nestjs/config
 # use joi to validate enviroment variables
 $ npm install @hapi/joi @types/hapi__joi
 
+# class-validator / class-transformer
+$ npm install class-validator class-transformer
+
 # use typeorm to connect to a docker postgres database
 $ npm install @nestjs/typeorm typeorm pg
 
 # integrating authentication with Passport
 $ npm install @nestjs/passport passport @types/passport-local passport-local @types/express
+
+# using json web token
+$ npm install @nestjs/jwt passport-jwt @types/passport-jwt cookie-parser @types/cookie-parser
 ```
 
 ## Running the app

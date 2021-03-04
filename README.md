@@ -52,6 +52,21 @@ $ npm install @nestjs/passport passport @types/passport-local passport-local @ty
 
 # using json web token
 $ npm install @nestjs/jwt passport-jwt @types/passport-jwt cookie-parser @types/cookie-parser
+
+# testing controllers
+$ npm install supertest
+
+# using aws s3 to manage files
+$ npm install aws-sdk @types/aws-sdk
+
+# unique id
+$ npm install uuid @types/uuid
+
+# for file transfer
+$ npm install -D @types/multer
+
+# using elasticsearch
+$ npm install @nestjs/elasticsearch @elastic/elasticsearch
 ```
 
 ## Running the app

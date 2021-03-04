@@ -9,6 +9,8 @@ import {
 import { Exclude } from 'class-transformer';
 import { Address } from './address.entity';
 import { Post } from '../posts/post.entity';
+import { PublicFile } from '../files/publicFile.entity';
+import { PrivateFile } from '../files/privateFile.entity';
 
 @Entity()
 export class User {
@@ -33,7 +35,17 @@ export class User {
   public address: Address;
 
   @OneToMany(() => Post, (post: Post) => post.author)
-  public posts: Post[];
+  public posts?: Post[];
+
+  @JoinColumn()
+  @OneToOne(() => PublicFile, {
+    eager: true,
+    nullable: true,
+  })
+  public avatar?: PublicFile;
+
+  @OneToMany(() => PrivateFile, (file: PrivateFile) => file.owner)
+  public files?: PrivateFile[];
 
   @Column({
     nullable: true,
